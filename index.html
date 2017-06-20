@@ -20,7 +20,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="css/animate.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,8 +32,8 @@
 
 <body>
 
-    <div class="brand">„ГАРВАНЕЦ”</div>
-    <div class="address-bar">с.Дружево</div>-8
+    <div class="brand animated bounceInDown">„ГАРВАНЕЦ”</div>
+    <div class="address-bar animated fadeInDown">с.Дружево</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -53,19 +53,24 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Начало</a>
+                        <a class="" href="en/index.html">
+                        <div>EN<span class="glyphicon glyphicon-flag"></span></div>
+                       </a>
                     </li>
                     <li>
-                        <a href="about.html">За Комплекса</a>
+                        <a class="animated" href="index.html">Начало</a>
                     </li>
                     <li>
-                        <a href="pricing.html">Цени</a>
+                        <a class="animated" href="about.html">За Комплекса</a>
                     </li>
                     <li>
-                        <a href="gallery.html">Галерия</a>
+                        <a class="animated" href="pricing.html">Цени</a>
                     </li>
                     <li>
-                        <a href="contacts.html">Контакти</a>
+                        <a class="animated" href="gallery.html">Галерия</a>
+                    </li>
+                    <li>
+                        <a class="animated" href="contacts.html">Контакти</a>
                     </li>
                 </ul>
 
@@ -79,20 +84,20 @@
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12 text-center">
-                    <h2 class="brand-before">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h2 class="brand-before animated">
                         <small>ДОБРЕ ДОШЛИ В</small>
                     </h2>
-                    <h1 class="brand-name">Туристически комплекс „ГАРВАНЕЦ”</h1>
-                    <hr class="tagline-divider">
+                    <h1 class="brand-name animated ">Туристически комплекс „ГАРВАНЕЦ”</h1>
+                    <hr class="tagline-divider animated fadeIn">
                     <h2>
-                        <small>
-                            <strong>с. Дружево</strong>
-                        </small>
+                        <!--<small>-->
+                            <!--<strong>с. Дружево</strong>-->
+                        <!--</small>-->
                     </h2>
                 </div>
-                <div class="col-lg-1 text-center"></div>
-                <div class="col-lg-10 text-center">
+                <div class="col-lg-2 text-center"></div>
+                <div class="col-lg-8 text-center">
 
 
 
@@ -103,18 +108,30 @@
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
                         </ol>
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
 
                             <div class="item active">
-                                <img class="img-responsive img-rounded" src="img/startp.JPG" alt="">
+                                <img class="img-responsive img-rounded" src="img/complex/DSC00444.JPG" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-rounded" src="img/001.jpg" alt="">
+                                <img class="img-responsive img-rounded" src="img/complex/DSC00582.JPG" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-rounded" src="img/DSC00571.JPG" alt="">
+                                <img class="img-responsive img-rounded" src="img/complex/DSC00586.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-rounded" src="img/complex/IMG_1270.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-rounded" src="img/complex/IMG_1298.JPG" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-rounded" src="img/complex/IMG_1329.JPG" alt="">
                             </div>
                         </div>
 
@@ -127,10 +144,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-1 text-center"></div>
+                <div class="col-lg-2 text-center"></div>
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center"> Заповядайте
+                    <h2 class="intro-text text-center animated zoomIn"> Заповядайте
                         <strong>при нас</strong>
                     </h2>
                     <hr>
@@ -147,8 +164,8 @@
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center"><strong>Намерете</strong> ни в<hr>
+
+                    <h2 class="intro-text text-center animated bounce"><hr><strong>Намерете</strong> ни в<hr>
                         <p><a href="https://www.booking.com/hotel/bg/garvanec.bg.html" class="btn btn-default btn-lg">Booking</a>
                             <a href="https://www.facebook.com/%D0%A2%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81-%D0%93%D0%B0%D1%80%D0%B2%D0%B0%D0%BD%D0%B5%D1%86-229768887225648/" class="btn btn-default btn-lg">Facebook</a>
                             <a href="https://grabo.bg/places/turisticheski-kompleks-garvanetz/deals" class="btn btn-default btn-lg">Grabo</a></p></div>
@@ -178,7 +195,7 @@
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 3000 //changes the speed
     })
     </script>
 

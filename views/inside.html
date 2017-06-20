@@ -20,7 +20,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="../css/animate.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,8 +122,8 @@
 
 <body>
 
-<div class="brand">„ГАРВАНЕЦ”</div>
-<div class="address-bar">с.Дружево</div>
+<div class="brand animated bounceInDown">„ГАРВАНЕЦ”</div>
+<div class="address-bar animated fadeInDown">с.Дружево</div>
 
 <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
@@ -179,11 +179,17 @@
                 <div class="col-lg-4">
                     <img id="myImg" data-target="#myModal" src="../img/DSC00571.JPG" alt="" width="300" height="200">
                 </div>
+
                 <div class="col-lg-4">
                     <img id="myImg1"  data-target="#myModal" src="../img/DSC00564.JPG" alt="" width="300" height="200">
                 </div>
+
                 <div class="col-lg-4">
                     <img id="myImg2" data-target="#myModal" src="../img/DSC00565.JPG" alt="" width="300" height="200">
+                </div>
+
+                <div class="col-lg-4">
+                    <img id="myImg3"  data-target="#myModal" src="../img/DSC00564.JPG" alt="" width="300" height="200">
                 </div>
 
 
@@ -194,6 +200,7 @@
                     <img class="modal-content" id="img01">
                     <img class="modal-content" id="img02">
                     <img class="modal-content" id="img03">
+                    <img class="modal-content" id="img04">
                     <div id="caption"></div>
                 </div>
 
@@ -242,9 +249,11 @@
     var img = document.getElementById('myImg');
     var img1 = document.getElementById('myImg1');
     var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
     var modalImg = document.getElementById("img01");
     var modalImg1 = document.getElementById("img02");
     var modalImg2 = document.getElementById("img03");
+    var modalImg3 = document.getElementById("img04");
     var captionText = document.getElementById("caption");
     var captionText1 = document.getElementById("caption1");
 
@@ -263,6 +272,12 @@
     img.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    };
+
+    img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg3.src = this.src;
         captionText.innerHTML = this.alt;
     };
 
