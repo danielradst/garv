@@ -67,7 +67,7 @@ td, th{
 }
 
 .brand-before {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .brand-name {
@@ -194,7 +194,18 @@ footer p {
         font-size: 1.25em;
     }
 }
+#contact{
+    padding-top: 5%;
+}
 
+#gallery1{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#gallery2{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 @media screen and (min-width:1200px) {
     td, th{
         padding: 4px;

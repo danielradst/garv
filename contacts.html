@@ -95,19 +95,22 @@
                     <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it!  -->
                     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">Click here to generate your map!</a></small></div><div><small><a href="http://promocode.com.ph/zalora/">Check out the latest Zalora offers here at promocode.com.ph</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(43.133623944246246,23.355801958653288),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(43.133623944246246,23.355801958653288)});infowindow = new google.maps.InfoWindow({content:'<strong>Garvanec</strong><br>Drujevo<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                 </div>
-                <div class="col-md-4">
+                <div id="contact" class="col-md-4">
 
                     <p class="text-center">Телефон:
                         <simple class="text-muted"><br>0876458669</simple>
                     </p>
+                    <hr>
                     <p class="text-center">Емайл:
                         <simple class="text-muted"><a href="garvanec.drujevo@gmail.com"><br>garvanec.drujevo@gmail.com</a></simple>
                     </p>
+                    <hr>
                     <p class="text-center">Адрес:
 
                             <br>община Своге, с. Дружево
                     <br><simple class="text-muted">*на входа на селото</simple>
                     </p>
+                    <hr>
                 </div>
                 <div class="clearfix"></div>
             </div>
